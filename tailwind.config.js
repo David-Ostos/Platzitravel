@@ -25,7 +25,7 @@ module.exports = {
       backgroundColor: theme =>({
         ...theme('colors'),
         'primary': '#CC2D4A',
-        'secundary': '#8FA206',
+        'secondary': '#8FA206',
         'terciary': '#61AEC9',
       }),
       textColor: theme =>({
@@ -33,6 +33,12 @@ module.exports = {
        'secundary': '#8FA206',
         'terciary': '#61AEC9',
       }),
+      fontFamily:{
+        Montserrat:['Montserrat','sans-serif']
+      },
+      boxShadow: {
+        '1': '0 2px 7px rgba(0,0,0,0.25)',
+      }
     },
   },
   variants: {
