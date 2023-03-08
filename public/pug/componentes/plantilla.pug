@@ -3,4 +3,9 @@ html
   include head.pug
   body
     block contenidos 
+    include tab_bar.pug
+    section.w-full.h-screen 
+      include home.pug
+      include recomendadas.pug 
+      include rentas_destacadas
     include footer.pug
