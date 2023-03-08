@@ -1,11 +1,12 @@
+include mixins.pug
 doctype html
 html
   include head.pug
-  body
+  body.pb-96
     block contenidos 
     include tab_bar.pug
     section.w-full.h-screen 
       include home.pug
-      include recomendadas.pug 
+      include recomendados.pug 
       include rentas_destacadas
     include footer.pug

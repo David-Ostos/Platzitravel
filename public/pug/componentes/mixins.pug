@@ -1,0 +1,8 @@
+-var card_contenido = [["norway","Norway","Beutifull landscapes"],["new_york","New York ","Concrete jungle"],["yosemite","Yosemite","A break from the world"],["seattle","Seattle","Big City"],["switzerland","Switzerland","Big City"]]
+
+mixin Card--recomendados(img,titulo,descripcion)
+  .Card
+    div(class="w-full h-3/5 rounded-t-lg bg-cover bg-"+img)
+    div(class=" w-full h-2/5 rounded-b-lg pl-4 pt-4")
+      p.font-bold.text-xl=titulo 
+      p.text-base=descripcion 

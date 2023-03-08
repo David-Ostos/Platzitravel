@@ -11,20 +11,59 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
   </head>
-  <body>
-    <nav> </nav>
+  <body class="pb-96">
+    <nav></nav>
     <div id="tab_bar"></div>
     <section class="w-full h-screen"> 
       <div id="home">
         <div class="w-full h-3/4">
-          <div class="w-full h-full flex flex-col absolute space-y-96 p-4 items-center">
+          <div class="w-full flex flex-col absolute space-y-96 p-4 items-center">
             <input class="outline-none p-3 rounded-full shadow-1 placeholder:text-center placeholder:text-black" placeholder="San Francisco" type="search" name="" id="">
             <button class="bg-white text-xl text-primary font-semibold p-4 w-48 shadow-1 rounded-full">Explore More</button>
           </div>
           <div class="w-full h-full"><img src="./img/sanFrancisco.jpg" alt="Foto del puente de san francisco"></div>
         </div>
       </div>
-      <div id="recomendadas"></div>
+      <div class="p-6" id="recomendados">
+        <p class="text-3xl font-semibold text-primary">Our Recomendations</p>
+        <div class="w-auto h-72 items-center mt-6 overflow-x-auto overscroll-x-contain flex space-x-4">
+          <div class="Card">
+            <div class="w-full h-3/5 rounded-t-lg bg-cover bg-norway"></div>
+            <div class=" w-full h-2/5 rounded-b-lg pl-4 pt-4">
+              <p class="font-bold text-xl">Norway</p>
+              <p class="text-base">Beutifull landscapes</p>
+            </div>
+          </div>
+          <div class="Card">
+            <div class="w-full h-3/5 rounded-t-lg bg-cover bg-new_york"></div>
+            <div class=" w-full h-2/5 rounded-b-lg pl-4 pt-4">
+              <p class="font-bold text-xl">New York </p>
+              <p class="text-base">Concrete jungle</p>
+            </div>
+          </div>
+          <div class="Card">
+            <div class="w-full h-3/5 rounded-t-lg bg-cover bg-yosemite"></div>
+            <div class=" w-full h-2/5 rounded-b-lg pl-4 pt-4">
+              <p class="font-bold text-xl">Yosemite</p>
+              <p class="text-base">A break from the world</p>
+            </div>
+          </div>
+          <div class="Card">
+            <div class="w-full h-3/5 rounded-t-lg bg-cover bg-seattle"></div>
+            <div class=" w-full h-2/5 rounded-b-lg pl-4 pt-4">
+              <p class="font-bold text-xl">Seattle</p>
+              <p class="text-base">Big City</p>
+            </div>
+          </div>
+          <div class="Card">
+            <div class="w-full h-3/5 rounded-t-lg bg-cover bg-switzerland"></div>
+            <div class=" w-full h-2/5 rounded-b-lg pl-4 pt-4">
+              <p class="font-bold text-xl">Switzerland</p>
+              <p class="text-base">Big City</p>
+            </div>
+          </div>
+        </div>
+      </div>
       <div id="rentas_destacadas"></div>
     </section>
     <footer> </footer>
