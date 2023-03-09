@@ -1,6 +1,8 @@
--var card_contenido = [["norway","Norway","Beutifull landscapes"],["new_york","New York ","Concrete jungle"],["yosemite","Yosemite","A break from the world"],["seattle","Seattle","Big City"],["switzerland","Switzerland","Big City"]]
+-var card_contenido = [["norway","Norway","Beutifull landscapes"],["new_york","New York ","Concrete jungle"],["yosemite","Yosemite","A break from the world"],["seattle","Seattle","Big City"],["switzerland","Switzerland","Big City"],["sydney","Sydney","A break from the world"],["europe","Europe","A break from the world"],["iceland","Iceland","A break from the world"],["bali","Bali","A break from the world"],["chicago","Chicago","A break from the world"],["sanFrancisco","San Francisco","A break from the world"]]
 -var card_rentas = [["chicago","Chicago","2 rooms, bathroom and kitchen."],["LA","Los Angeles","4 rooms, 3 bathrooms,  kitchen and private pool."],["miami","Miami","3 rooms, 2 bathrooms,  kitchen and amazing sea view."],["bali","Bali","2 rooms, 2 bathrooms,  kitchen and private pool."]]
 -var card_faqs = [["Payment Methods","We accept VISA, MasterCard, American Express, Paypal and Binance"],["Cancellation Policy","We accept VISA, MasterCard, American Express, Paypal and Binance"],["Long Stays ","We accept VISA, MasterCard, American Express, Paypal and Binance"],["Cancellation Policy","We accept VISA, MasterCard, American Express, Paypal and Binance"],["Cancellation Policy","We accept VISA, MasterCard, American Express, Paypal and Binance"]]
+-var enlaces_footer =["Investors","Jobs","Privacy policy","Terms and Conditions","Platzi Travel, inc","Follow Us"]
+
 mixin Card--recomendados(img,titulo,descripcion)
   .Card
     div(class="w-full h-3/5 rounded-t-lg bg-cover bg-"+img)
@@ -9,7 +11,7 @@ mixin Card--recomendados(img,titulo,descripcion)
       p.text-base=descripcion 
 
 mixin  Card--rentas(img,nombre,descripcion)
-  div(class="w-full h-96 bg-"+ img +" bg-cover rounded-2xl")
+  div(class="w-full h-96 bg-"+ img +" bg-cover rounded-2xl bg-fixed bg-center")
       h3(class="CardTitulo")=nombre
       p(class="text-base pl-8 text-white mr-8 font-medium")=descripcion 
 
@@ -17,3 +19,6 @@ mixin Card--faqs(titulo,descripcion)
   div(class="")
       h2(class="text-xl font-semibold text-primary")=titulo
       p.text-base.pt-2.font-medium=descripcion
+
+mixin Enlaces--footer(texto)
+  li.text-sm.text-gray-300=texto

@@ -1,2 +1,10 @@
-footer.w-full.h-auto.bg-gray-50
-  h4 Abaot Us
+footer.w-full.h-auto.bg-gray-50.p-6.space-y-2
+  h4.text-lg.font-medium About Us
+  ul
+    each enlace in enlaces_footer 
+      +Enlaces--footer(enlace)
+  div.space-x-2
+    a(href="") 
+      i(class="fa-brands fa-instagram text-2xl text-gray-300")
+    a(href="https://github.com/David-Ostos/Platzitravel") 
+      i(class="fa-brands fa-github text-2xl text-gray-300")
