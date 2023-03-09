@@ -1,14 +1,19 @@
 -var card_contenido = [["norway","Norway","Beutifull landscapes"],["new_york","New York ","Concrete jungle"],["yosemite","Yosemite","A break from the world"],["seattle","Seattle","Big City"],["switzerland","Switzerland","Big City"]]
 -var card_rentas = [["chicago","Chicago","2 rooms, bathroom and kitchen."],["LA","Los Angeles","4 rooms, 3 bathrooms,  kitchen and private pool."],["miami","Miami","3 rooms, 2 bathrooms,  kitchen and amazing sea view."],["bali","Bali","2 rooms, 2 bathrooms,  kitchen and private pool."]]
-
+-var card_faqs = [["Payment Methods","We accept VISA, MasterCard, American Express, Paypal and Binance"],["Cancellation Policy","We accept VISA, MasterCard, American Express, Paypal and Binance"],["Long Stays ","We accept VISA, MasterCard, American Express, Paypal and Binance"],["Cancellation Policy","We accept VISA, MasterCard, American Express, Paypal and Binance"],["Cancellation Policy","We accept VISA, MasterCard, American Express, Paypal and Binance"]]
 mixin Card--recomendados(img,titulo,descripcion)
   .Card
     div(class="w-full h-3/5 rounded-t-lg bg-cover bg-"+img)
     div(class=" w-full h-2/5 rounded-b-lg pl-4 pt-4")
-      p.font-bold.text-xl=titulo 
+      h2.font-bold.text-xl=titulo 
       p.text-base=descripcion 
 
 mixin  Card--rentas(img,nombre,descripcion)
   div(class="w-full h-96 bg-"+ img +" bg-cover rounded-2xl")
-      p(class="CardTitulo")=nombre
-      p(class="text-base pl-8   text-white mr-8")=descripcion 
+      h3(class="CardTitulo")=nombre
+      p(class="text-base pl-8 text-white mr-8 font-medium")=descripcion 
+
+mixin Card--faqs(titulo,descripcion)
+  div(class="")
+      h2(class="text-xl font-semibold text-primary")=titulo
+      p.text-base.pt-2.font-medium=descripcion

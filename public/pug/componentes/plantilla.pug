@@ -3,10 +3,12 @@ doctype html
 html
   include head.pug
   body.font-Montserrat
-    block contenidos 
-    include tab_bar.pug
-    section.w-full.h-screen 
-      include home.pug
-      include recomendados.pug 
-      include rentas_destacadas.pug
+    main 
+      block contenidos 
+      include tab_bar.pug
+      section.w-full.h-auto
+        include home.pug
+        include recomendados.pug 
+        include rentas_destacadas.pug
+        include faqs.pug
     include footer.pug

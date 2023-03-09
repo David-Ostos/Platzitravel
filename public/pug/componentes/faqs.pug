@@ -1,0 +1,5 @@
+#faqs(class="w-full h-full mt-6")
+  div(class="w-full h-full px-6 flex flex-col space-y-4")
+    p(class="text-3xl text-primary font-semibold") FAQs
+    each value in card_faqs 
+      +Card--faqs(value[0],value[1])
