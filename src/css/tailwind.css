@@ -4,7 +4,7 @@
 
 @layer components{
   .Card{
-    @apply w-48 h-64 shadow-1 rounded-lg flex-none; 
+    @apply w-48 h-64 shadow-1 rounded-lg flex-none transform transition-all hover:-translate-y-4 hover:shadow-xl; 
   }
   .Card:nth-child(even){
     @apply bg-white text-terciary;
@@ -12,5 +12,7 @@
   .Card:nth-child(odd){
     @apply bg-secondary text-white;
   }
-
+  .CardTitulo{
+    @apply text-3xl font-semibold px-8 pt-8 pb-2 text-white 
+  }
 }
