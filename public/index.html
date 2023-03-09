@@ -17,11 +17,16 @@
       <section class="w-full h-auto">
         <div id="home">
           <div class="w-full h-3/4">
-            <div class="w-full flex flex-col absolute space-y-96 p-4 items-center">
+            <div class=" w-full flex flex-col absolute space-y-96 p-4 items-center lg:space-y-0 lg:items-start ">
               <input class="outline-none p-3 rounded-full shadow-1 placeholder:text-center placeholder:text-black transition duration-300 focus-within:shadow-1 focus:ring-2 focus:w-11/12 lg:hidden" placeholder="San Francisco" type="search" name="" id="">
-              <button class="bg-white text-xl text-primary font-semibold p-4 w-48 shadow-1 rounded-full transition-all duration-500 ease-in-out hover:bg-primary hover:text-white hover:-translate-y-1 hover:scale-110">Explore More</button>
+              <div class="lg:top-56 lg:absolute  lg:left-16">
+                <div class="hidden h-auto w-auto lg:flex pb-6">
+                  <p class="text-4xl left-16 font-bold  w-[404px]">Find More Locations like this</p>
+                </div>
+                <button class="bg-white text-xl text-primary font-semibold p-4 w-48 shadow-1 rounded-full transition-all duration-500 ease-in-out hover:bg-primary hover:text-white hover:-translate-y-1 hover:scale-110 ">Explore More</button>
+              </div>
             </div>
-            <div class=" w-full h-full lg:h-96 bg-sanFranciscoDesktop"><img class="lg:hidden" src="https://i.imgur.com/8rdEA7W.jpg" alt="Foto del puente de san francisco"></div>
+            <div class=" w-full h-full lg:h-[597px] lg:bg-sanFranciscoDesktop lg:bg-cover lg:bg-center"><img class="lg:hidden" src="https://i.imgur.com/8rdEA7W.jpg" alt="Foto del puente de san francisco"></div>
           </div>
         </div>
         <div class="p-6" id="recomendados">

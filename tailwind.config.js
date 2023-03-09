@@ -38,6 +38,9 @@ module.exports = {
       },
       boxShadow: {
         '1': '0 2px 7px rgba(0,0,0,0.25)',
+      },
+      height: {
+        '597': '597px',
       }
     },
   },
