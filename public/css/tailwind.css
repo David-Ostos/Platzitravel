@@ -1131,6 +1131,14 @@ video {
     height: 597px;
   }
 
+  .lg\:h-\[1200px\] {
+    height: 1200px;
+  }
+
+  .lg\:w-auto {
+    width: auto;
+  }
+
   .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -1153,6 +1161,10 @@ video {
 
   .lg\:items-start {
     align-items: flex-start;
+  }
+
+  .lg\:gap-4 {
+    gap: 1rem;
   }
 
   .lg\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
