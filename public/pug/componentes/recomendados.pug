@@ -1,6 +1,7 @@
 #recomendados.p-6
   p.text-3xl.font-semibold.text-primary Our Recomendations
-  .w-auto.h-72.items-center.mt-6.overflow-x-auto.overscroll-x-contain.flex.space-x-4
+  div(class=" w-auto h-72 items-center mt-6 overflow-x-auto overscroll-x-contain flex space-x-4 lg:h-96")
     each value in card_contenido
       +Card--recomendados(value[0],value[1],value[2])
+  
 

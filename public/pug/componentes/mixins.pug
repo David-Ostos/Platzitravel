@@ -1,6 +1,11 @@
 -var card_contenido = [["norway","Norway","Beutifull landscapes"],["new_york","New York ","Concrete jungle"],["yosemite","Yosemite","A break from the world"],["seattle","Seattle","Big City"],["switzerland","Switzerland","Big City"],["sydney","Sydney","A break from the world"],["europe","Europe","A break from the world"],["iceland","Iceland","A break from the world"],["bali","Bali","A break from the world"],["chicago","Chicago","A break from the world"],["sanFrancisco","San Francisco","A break from the world"]]
+
 -var card_rentas = [["chicago","Chicago","2 rooms, bathroom and kitchen."],["LA","Los Angeles","4 rooms, 3 bathrooms,  kitchen and private pool."],["miami","Miami","3 rooms, 2 bathrooms,  kitchen and amazing sea view."],["bali","Bali","2 rooms, 2 bathrooms,  kitchen and private pool."]]
+
+-var card_rentas_grid = [["chicago","Chicago","2 rooms, bathroom and kitchen.","1","1","1","3","black"],["LA","Los Angeles","4 rooms, 3 bathrooms,  kitchen and private pool.","2","2","1","1","white"],["miami","Miami","3 rooms, 2 bathrooms,  kitchen and amazing sea view.","2","1","2","2","white"],["bali","Bali","2 rooms, 2 bathrooms,  kitchen and private pool.","3","1","2","2","white"]]
+
 -var card_faqs = [["Payment Methods","We accept VISA, MasterCard, American Express, Paypal and Binance"],["Cancellation Policy","We accept VISA, MasterCard, American Express, Paypal and Binance"],["Long Stays ","We accept VISA, MasterCard, American Express, Paypal and Binance"],["Cancellation Policy","We accept VISA, MasterCard, American Express, Paypal and Binance"],["Cancellation Policy","We accept VISA, MasterCard, American Express, Paypal and Binance"]]
+
 -var enlaces_footer =["Investors","Jobs","Privacy policy","Terms and Conditions","Platzi Travel, inc","Follow Us"]
 
 mixin Card--recomendados(img,titulo,descripcion)
@@ -22,3 +27,8 @@ mixin Card--faqs(titulo,descripcion)
 
 mixin Enlaces--footer(texto)
   li.text-sm.text-gray-300=texto
+
+mixin  Card--rentas--grid(img,nombre,descripcion,row,rowE,column,columnE,color)
+  div(class=" row-start-"+ row +" row-span-"+ rowE +" col-start-"+ column +" col-span-"+ columnE +" w-full h-auto bg-"+ img +" bg-cover rounded-2xl bg-center")
+      h3(class="CardTitulo text-"+ color +"")=nombre
+      p(class="text-base pl-8 text-"+ color +" mr-8 font-medium")=descripcion 
