@@ -1,8 +1,8 @@
 include mixins.pug
 doctype html
-html
+html.dark 
   include head.pug
-  body.font-Montserrat
+  body(class="font-Montserrat dark:bg-gray-900 dark:text-white")
     main 
       include nav.pug
       block contenidos 
@@ -13,3 +13,4 @@ html
         include faqs.pug
     include footer.pug
     include tab_bar.pug
+    include script.pug 

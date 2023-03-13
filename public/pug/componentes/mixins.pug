@@ -22,8 +22,8 @@ mixin  Card--rentas(img,nombre,descripcion)
 
 mixin Card--faqs(titulo,descripcion)
   div(class="")
-      h2(class="text-xl font-semibold text-primary")=titulo
-      p.text-base.pt-2.font-medium=descripcion
+      h2(class="text-xl font-semibold text-primary dark:text-white")=titulo
+      p(class="text-base pt-2 font-medium dark:text-white")=descripcion
 
 mixin Enlaces--footer(texto)
   li.text-sm.text-gray-300=texto
